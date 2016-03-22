@@ -1,0 +1,26 @@
+
+
+/* 404 page styling */
+
+.no-results .entry-content, .not-found .entry-content {
+    background: none;
+    box-shadow: none;
+}
+
+.no-results .entry-content p, .not-found .entry-content p {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+    padding: .5em;
+    position: absolute;
+    left: 15%;
+    z-index: 61;
+}
+
+#ateyouup {
+    background-color: rgba(0,0,0,0);
+    left: 15%;
+    position: absolute;
+    z-index: 60;
+}

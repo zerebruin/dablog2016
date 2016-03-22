@@ -1,0 +1,848 @@
+/* 
+    main stylesheet for dacolour16 wordpress theme
+*/
+/*
+ *= require_self
+*/
+/* main colours */
+/* (refine!) */
+/* line 2, scss/base/_global.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, scss/base/_global.scss */
+body {
+  font-family: 'Titillium Web', Helvetica, sans-serif;
+  background: #ffdd00;
+  font-size: 2em;
+}
+
+/* headings */
+/* line 17, scss/base/_global.scss */
+h1 {
+  font-size: 4em;
+}
+@media (max-width: 860px) {
+  /* line 17, scss/base/_global.scss */
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* line 24, scss/base/_global.scss */
+h2 {
+  font-size: 3em;
+}
+@media (max-width: 860px) {
+  /* line 24, scss/base/_global.scss */
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/* line 31, scss/base/_global.scss */
+h1, h2 {
+  font-family: 'Passion One', serif;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+/* line 39, scss/base/_global.scss */
+h1 a, h2 a, .entry-header a, h1 a:hover, h2 a:hover, .entry-header a:hover, h1 a:visited, h2 a:visited, .entry-header a:visited {
+  color: #fff;
+  text-shadow: 0 -1px 2px #666666, 0 1px 2px black;
+  text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  /* line 47, scss/base/_global.scss */
+  h1, .h1, h2, .h2, h3, .h3 {
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+}
+/*  todo: set title hover color to  color: $yellow;*/
+/* line 62, scss/base/_global.scss */
+p {
+  font-size: 1em;
+}
+
+/* links */
+/* line 69, scss/base/_global.scss */
+a, a:visited, a:hover {
+  color: #00B4C1;
+}
+
+/* line 73, scss/base/_global.scss */
+a, a:visited {
+  text-decoration: none;
+}
+
+/* line 77, scss/base/_global.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 81, scss/base/_global.scss */
+ul li, ol li {
+  list-style: none;
+}
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+/* line 91, scss/base/_global.scss */
+.comment-content img, .entry-content img, .entry-summary img, #site-header img, .widget img, .wp-caption {
+  max-width: 100%;
+}
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+/* line 101, scss/base/_global.scss */
+.comment-content img[height], .entry-content img, .entry-summary img, img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"], #site-header img {
+  height: auto;
+}
+
+/* line 105, scss/base/_global.scss */
+img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Alignment */
+/* line 116, scss/base/_global.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 120, scss/base/_global.scss */
+.alignright {
+  float: right;
+}
+
+/* line 124, scss/base/_global.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 130, scss/base/_global.scss */
+blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {
+  margin: 7px 24px 7px 0;
+}
+
+/* line 134, scss/base/_global.scss */
+.wp-caption.alignleft {
+  margin: 7px 14px 7px 0;
+}
+
+/* line 138, scss/base/_global.scss */
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {
+  margin: 7px 0 7px 24px;
+}
+
+/* line 142, scss/base/_global.scss */
+.wp-caption.alignright {
+  margin: 7px 0 7px 14px;
+}
+
+/* line 146, scss/base/_global.scss */
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* line 151, scss/base/_global.scss */
+.site-content blockquote.alignleft, .site-content blockquote.alignright {
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  padding-top: 17px;
+  width: 50%;
+}
+
+/* line 158, scss/base/_global.scss */
+.site-content blockquote.alignleft p, .site-content blockquote.alignright p {
+  margin-bottom: 17px;
+}
+
+/* line 162, scss/base/_global.scss */
+.wp-caption {
+  margin-bottom: 24px;
+}
+
+/* line 166, scss/base/_global.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+}
+
+/* line 171, scss/base/_global.scss */
+.wp-caption {
+  color: #767676;
+}
+
+/* line 175, scss/base/_global.scss */
+.wp-caption-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 9px 0;
+}
+
+/* line 185, scss/base/_global.scss */
+div.wp-caption .wp-caption-text {
+  padding-right: 10px;
+}
+
+/* line 189, scss/base/_global.scss */
+div.wp-caption.alignright img[class*="wp-image-"], div.wp-caption.alignright .wp-caption-text {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+/* line 194, scss/base/_global.scss */
+.sticky .entry-date {
+  display: none;
+}
+
+/* navigation styles partials file */
+/* main elements */
+/* line 7, scss/base/_navigation.scss */
+header {
+  width: 100%;
+  background: #424242;
+  min-height: 180px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+}
+/* line 14, scss/base/_navigation.scss */
+header h1 {
+  text-shadow: 0 1px 2px #666666;
+}
+/* line 18, scss/base/_navigation.scss */
+header h1, header h2 {
+  margin-left: 15%;
+  margin-right: 25%;
+}
+@media (max-width: 1599px) {
+  /* line 7, scss/base/_navigation.scss */
+  header {
+    min-height: 60px;
+    padding-top: 0.2em;
+  }
+}
+
+/* logo */
+/* line 31, scss/base/_navigation.scss */
+.site-title {
+  margin-top: 0;
+  padding-top: .4em;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  /* Safari and Chrome */
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-timing-function: ease;
+  /* Opera */
+  -o-transition-duration: 400ms;
+  -o-transition-timing-function: ease;
+}
+@media (max-width: 1599px) {
+  /* line 31, scss/base/_navigation.scss */
+  .site-title {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -2em;
+    top: 3em;
+    z-index: 667;
+    margin: 0;
+  }
+}
+
+/* line 58, scss/base/_navigation.scss */
+.site-title-fixed {
+  font-size: 2em;
+  padding-top: .4em;
+  position: fixed;
+  z-index: 667;
+  margin: 0 0 0 1em;
+}
+@media (max-width: 1599px) {
+  /* line 58, scss/base/_navigation.scss */
+  .site-title-fixed {
+    top: 4.4em;
+    position: fixed;
+    margin-left: 0.5em;
+  }
+}
+
+/* navigation */
+/* line 72, scss/base/_navigation.scss */
+nav {
+  display: inline;
+  color: #fff;
+  font-family: 'Passion One', serif;
+  font-size: 2em;
+  background: #424242;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  text-shadow: 0 1px 2px #333333;
+  z-index: 102;
+}
+
+/* This class is added on scroll */
+/* line 86, scss/base/_navigation.scss */
+.navfixed {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  padding-top: .20em;
+}
+
+/* line 94, scss/base/_navigation.scss */
+.menu, #respond {
+  margin: 0 25% 0 15%;
+  width: 60%;
+}
+
+/* WTF? */
+/* line 100, scss/base/_navigation.scss */
+#respond {
+  padding: 10px 40px 0;
+}
+
+/* line 105, scss/base/_navigation.scss */
+.menu li {
+  display: inline;
+  padding: .4em 1em .4em 0;
+}
+/* line 109, scss/base/_navigation.scss */
+.menu li a, .menu li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 114, scss/base/_navigation.scss */
+.menu li a:hover {
+  color: #ffdd00;
+  text-shadow: 0 -1px 2px #666666, 0 1px 2px black;
+}
+
+/* line 1, scss/base/_content.scss */
+article {
+  z-index: 0;
+  margin-bottom: 2em;
+}
+@media (max-width: 799px) {
+  /* line 1, scss/base/_content.scss */
+  article {
+    position: relative;
+    float: left;
+  }
+}
+
+/* line 13, scss/base/_content.scss */
+article header {
+  width: 100%;
+  text-align: center;
+  background: #e0004e;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) inset;
+  padding: 1em;
+  min-height: 100px;
+}
+@media (max-width: 860px) {
+  /* line 13, scss/base/_content.scss */
+  article header {
+    min-height: 50px;
+  }
+}
+
+/* line 26, scss/base/_content.scss */
+article .entry-content {
+  width: 60%;
+  background: #fff;
+  margin: 0 25% 0 15%;
+  padding: 2em;
+}
+@media (max-width: 1279px) {
+  /* line 26, scss/base/_content.scss */
+  article .entry-content {
+    width: 70%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 26, scss/base/_content.scss */
+  article .entry-content {
+    width: 60%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 799px) {
+  /* line 26, scss/base/_content.scss */
+  article .entry-content {
+    width: 85%;
+    margin: 0 5% 0 10%;
+  }
+}
+
+/* line 47, scss/base/_content.scss */
+footer {
+  width: 100%;
+  background: #63A000;
+}
+
+/* line 52, scss/base/_content.scss */
+.entry-meta {
+  font-size: .8em;
+  background: #424242;
+  color: #fff;
+  margin: 0 25% 0 15%;
+  width: 60%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1919px) {
+  /* line 52, scss/base/_content.scss */
+  .entry-meta {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 1279px) {
+  /* line 52, scss/base/_content.scss */
+  .entry-meta {
+    width: 70%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 799px) {
+  /* line 52, scss/base/_content.scss */
+  .entry-meta {
+    width: 85%;
+    margin: 0 5% 0 10%;
+  }
+}
+/* line 73, scss/base/_content.scss */
+.entry-meta p {
+  padding: .5em .5em .5em 2em;
+  margin: 0;
+}
+
+/* line 80, scss/base/_content.scss */
+#posts-nav {
+  background: #424242;
+  width: 60%;
+  margin: 0 25% 0 15%;
+  padding: .5em;
+}
+/* line 86, scss/base/_content.scss */
+#posts-nav li a {
+  font-family: 'Passion One', serif;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* line 94, scss/base/_content.scss */
+.entry-content {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* line 98, scss/base/_content.scss */
+.attachment-post-thumbnail .wp-post-image {
+  margin-top: -60px;
+}
+
+/* line 102, scss/base/_content.scss */
+.tweets_avatar li {
+  border-radius: none !important;
+}
+
+/*sidebar styles */
+/* line 4, scss/base/_sidebar.scss */
+.flagfixed {
+  position: fixed !important;
+  top: 0;
+  margin-top: 0;
+}
+
+/* line 10, scss/base/_sidebar.scss */
+.flagsidebar {
+  width: 20%;
+  max-width: 360px;
+  min-width: 160px;
+  /*    height: 100vh;*/
+  position: absolute;
+  right: 0;
+  /*
+  background: $yellow;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  */
+  margin-top: 20px;
+}
+@media (max-width: 1279px) {
+  /* line 10, scss/base/_sidebar.scss */
+  .flagsidebar {
+    top: 0;
+    z-index: 104;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 10, scss/base/_sidebar.scss */
+  .flagsidebar {
+    width: 30%;
+  }
+}
+@media (max-width: 799px) {
+  /* line 10, scss/base/_sidebar.scss */
+  .flagsidebar {
+    position: relative;
+    float: left;
+    width: 85%;
+    margin: 0 5% 0 10%;
+  }
+}
+
+/* line 39, scss/base/_sidebar.scss */
+.flagsidebar aside {
+  padding: 1em;
+}
+
+/* line 46, scss/base/_sidebar.scss */
+#sidebar {
+  width: 20%;
+  float: right;
+  z-index: 10;
+  position: fixed;
+  float: right;
+  top: 20%;
+  right: 0;
+}
+
+/* line 58, scss/base/_sidebar.scss */
+aside h1 {
+  text-shadow: 0 -1px 2px #666666, 0 1px 2px white;
+  background: #02a5e0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+  padding: .25em;
+  margin: 0;
+}
+@media (max-width: 1279px) {
+  /* line 58, scss/base/_sidebar.scss */
+  aside h1 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 799px) {
+  /* line 58, scss/base/_sidebar.scss */
+  aside h1 {
+    font-size: 2em;
+  }
+}
+/* line 73, scss/base/_sidebar.scss */
+aside ul, aside .textwidget {
+  background: #fff;
+  padding: .25em;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0) inset;
+}
+/* line 79, scss/base/_sidebar.scss */
+aside ul li {
+  padding: .2em;
+}
+/* line 83, scss/base/_sidebar.scss */
+aside ul, aside aside ol {
+  margin-bottom: 0;
+}
+
+/* search form styling */
+/* line 94, scss/base/_sidebar.scss */
+input[type="text"], input[type="password"], textarea {
+  background: #ffffff;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0);
+  padding: 2px;
+}
+
+/* line 102, scss/base/_sidebar.scss */
+#s {
+  position: absolute;
+  right: 80px;
+  color: #999999;
+  margin: 0;
+  padding: 10px 8px;
+  /*text-transform: lowercase;*/
+  width: 260px;
+  transition-duration: 400ms;
+  transition-property: width, background;
+  transition-timing-function: ease;
+  /* Safari and Chrome */
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-property: width, background;
+  -webkit-transition-timing-function: ease;
+  /* Opera */
+  -o-transition-duration: 400ms;
+  -o-transition-property: width, background;
+  -o-transition-timing-function: ease;
+}
+
+/* line 123, scss/base/_sidebar.scss */
+#s:focus {
+  width: 500px;
+}
+
+/* line 127, scss/base/_sidebar.scss */
+#searchsubmit {
+  text-indent: -9999px;
+  background: url("../img/searchsubmit.png") rgba(0, 0, 0, 0) no-repeat;
+  border: none;
+  height: 48px;
+  width: 48px;
+  /*    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);*/
+}
+
+/* line 138, scss/base/_sidebar.scss */
+#searchform {
+  float: right;
+}
+
+/* line 142, scss/base/_sidebar.scss */
+.widget_search {
+  margin: .5em 0 3em;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  /* Safari and Chrome */
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-timing-function: ease;
+  /* Opera */
+  -o-transition-duration: 400ms;
+  -o-transition-timing-function: ease;
+}
+/* line 153, scss/base/_sidebar.scss */
+.widget_search label {
+  color: #fff;
+}
+
+/* line 158, scss/base/_sidebar.scss */
+.searchfixed {
+  padding: 0 1em 0 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 103;
+  margin-top: .4em;
+}
+
+/* widget styles */
+/* line 170, scss/base/_sidebar.scss */
+.widget-title {
+  font-size: 3em;
+}
+@media (max-width: 1599px) {
+  /* line 170, scss/base/_sidebar.scss */
+  .widget-title {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1279px) {
+  /* line 170, scss/base/_sidebar.scss */
+  .widget-title {
+    font-size: 1.8em;
+  }
+}
+
+/* extra: elevator control */
+/* line 6, scss/base/_specials.scss */
+.elevator-control {
+  height: 50px;
+  width: 50px;
+  padding: 2em;
+  position: absolute;
+  right: 0;
+  z-index: 102;
+  background: url("../img/backtotop.png") no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 18, scss/base/_specials.scss */
+.elevator-control-fixed {
+  position: fixed;
+  top: 120px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+/* add-on style changes */
+/* line 5, scss/base/_addons.scss */
+.social_share_privacy {
+  padding-top: 2em;
+}
+
+/* 404 page styling */
+/* line 5, scss/base/_errorpages.scss */
+.no-results .entry-content, .not-found .entry-content {
+  background: none;
+  box-shadow: none;
+}
+
+/* line 10, scss/base/_errorpages.scss */
+.no-results .entry-content p, .not-found .entry-content p {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  -webkit-transform: rotate(12deg);
+  transform: rotate(12deg);
+  padding: .5em;
+  position: absolute;
+  left: 15%;
+  z-index: 61;
+}
+
+/* line 21, scss/base/_errorpages.scss */
+#ateyouup {
+  background-color: rgba(0, 0, 0, 0);
+  left: 15%;
+  position: absolute;
+  z-index: 60;
+}
+
+/**
+ * 6.5 Gallery
+ * -----------------------------------------------------------------------------
+ */
+/* line 9, scss/base/_gallery.scss */
+.gallery {
+  margin-bottom: 20px;
+}
+
+/* line 13, scss/base/_gallery.scss */
+.gallery-item {
+  float: left;
+  margin: 0 4px 4px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 20, scss/base/_gallery.scss */
+.gallery-columns-1 .gallery-item {
+  max-width: 100%;
+}
+
+/* line 24, scss/base/_gallery.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 48%;
+  max-width: -webkit-calc(50% - 4px);
+  max-width: calc(50% - 4px);
+}
+
+/* line 30, scss/base/_gallery.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 32%;
+  max-width: -webkit-calc(33.3% - 4px);
+  max-width: calc(33.3% - 4px);
+}
+
+/* line 36, scss/base/_gallery.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 23%;
+  max-width: -webkit-calc(25% - 4px);
+  max-width: calc(25% - 4px);
+}
+
+/* line 42, scss/base/_gallery.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 19%;
+  max-width: -webkit-calc(20% - 4px);
+  max-width: calc(20% - 4px);
+}
+
+/* line 48, scss/base/_gallery.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 15%;
+  max-width: -webkit-calc(16.7% - 4px);
+  max-width: calc(16.7% - 4px);
+}
+
+/* line 54, scss/base/_gallery.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 13%;
+  max-width: -webkit-calc(14.28% - 4px);
+  max-width: calc(14.28% - 4px);
+}
+
+/* line 60, scss/base/_gallery.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 11%;
+  max-width: -webkit-calc(12.5% - 4px);
+  max-width: calc(12.5% - 4px);
+}
+
+/* line 66, scss/base/_gallery.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 9%;
+  max-width: -webkit-calc(11.1% - 4px);
+  max-width: calc(11.1% - 4px);
+}
+
+/* line 72, scss/base/_gallery.scss */
+.gallery-columns-1 .gallery-item:nth-of-type(1n), .gallery-columns-2 .gallery-item:nth-of-type(2n), .gallery-columns-3 .gallery-item:nth-of-type(3n), .gallery-columns-4 .gallery-item:nth-of-type(4n), .gallery-columns-5 .gallery-item:nth-of-type(5n), .gallery-columns-6 .gallery-item:nth-of-type(6n), .gallery-columns-7 .gallery-item:nth-of-type(7n), .gallery-columns-8 .gallery-item:nth-of-type(8n), .gallery-columns-9 .gallery-item:nth-of-type(9n) {
+  margin-right: 0;
+}
+
+/* line 76, scss/base/_gallery.scss */
+.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1), .gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1), .gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1), .gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
+  clear: left;
+}
+
+/* line 80, scss/base/_gallery.scss */
+.gallery-caption {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  max-height: 50%;
+  opacity: 0;
+  padding: 6px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 99, scss/base/_gallery.scss */
+.gallery-caption:before {
+  content: "";
+  height: 100%;
+  min-height: 49px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 109, scss/base/_gallery.scss */
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* line 113, scss/base/_gallery.scss */
+.gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption {
+  display: none;
+}

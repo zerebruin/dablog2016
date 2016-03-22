@@ -1,0 +1,26 @@
+/*
+Theme Name: DAColour16
+Theme URI: http://david-arndt.de/dev/dacolour16
+Author: David Arndt
+Author URI: http://david-arndt.de
+Description: 2016-03-22 DAColour16 is based on upBootWP (http://upplex.de)
+Version: 0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, purple, yellow, blue, gray, right-sidebar, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options
+Text Domain: dacolour16
+Domain Path: /languages/
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+DAColour16 feat. upBootWP is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc. and Twitter Bootstrap 3 
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen|Titillium+Web:400,400italic|Passion+One);
+
+@import url('css/bootstrap.min.css');
+
+@import url('css/dacolour16_main.css');
+

@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', Helvetica, sans-serif;
+    background: $yellow;
+    font-size: 2em;
+}
+
+
+
+/* headings */
+
+h1 {
+    font-size: 4em;
+    @media (max-width: 860px) {
+        font-size: 3em;
+    }
+}
+
+h2 {
+    font-size: 3em;
+    @media (max-width: 860px) {
+        font-size: 2em;
+    }
+}
+
+h1, h2 {
+    font-family: 'Passion One', serif;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h1 a, h2 a, .entry-header a, h1 a:hover, h2 a:hover, .entry-header a:hover, h1 a:visited, h2 a:visited, .entry-header a:visited {
+    color: #fff;
+    text-shadow: 0 -1px 2px $shadow-grey, 0 1px 2px #000000;
+    text-decoration: none;
+}
+
+
+@media (max-width: 860px) {
+    h1, .h1, h2, .h2, h3, .h3 {
+            margin-bottom: 6px;
+            margin-top: 12px;
+        }
+}
+
+
+
+
+
+
+
+
+/*  todo: set title hover color to  color: $yellow;*/
+
+p {
+    font-size: 1em;
+}
+
+
+/* links */
+
+a, a:visited, a:hover {
+    color: #00B4C1;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+
+
+
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+
+.comment-content img, .entry-content img, .entry-summary img, #site-header img, .widget img, .wp-caption {
+    max-width: 100%;
+}
+
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+
+.comment-content img[height], .entry-content img, .entry-summary img, img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"], #site-header img {
+    height: auto;
+}
+
+img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+
+/* Alignment */
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {
+    margin: 7px 24px 7px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 7px 14px 7px 0;
+}
+
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {
+    margin: 7px 0 7px 24px;
+}
+
+.wp-caption.alignright {
+    margin: 7px 0 7px 14px;
+}
+
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.site-content blockquote.alignleft, .site-content blockquote.alignright {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 17px;
+    width: 50%;
+}
+
+.site-content blockquote.alignleft p, .site-content blockquote.alignright p {
+    margin-bottom: 17px;
+}
+
+.wp-caption {
+    margin-bottom: 24px;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0;
+}
+
+.wp-caption {
+    color: #767676;
+}
+
+.wp-caption-text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 9px 0;
+}
+
+div.wp-caption .wp-caption-text {
+    padding-right: 10px;
+}
+
+div.wp-caption.alignright img[class*="wp-image-"], div.wp-caption.alignright .wp-caption-text {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.sticky .entry-date {
+    display: none;
+}
+
+
+
+

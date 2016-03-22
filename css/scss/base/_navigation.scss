@@ -1,0 +1,122 @@
+/* navigation styles partials file */
+
+
+
+/* main elements */
+
+header {
+    width: 100%;
+    background: $dark-grey;
+    min-height: 180px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+    h1 {
+    	text-shadow: 0 1px 2px $shadow-grey;
+    }
+
+    h1, h2 {
+    	margin-left: 15%;
+    	margin-right: 25%;
+    }
+
+    @media (max-width: 1599px) {
+        min-height: 60px;
+        padding-top: 0.2em;
+    }
+
+}
+
+/* logo */
+.site-title {
+    margin-top: 0;
+    padding-top: .4em;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    /* Safari and Chrome */
+    -webkit-transition-duration: 400ms;
+    -webkit-transition-timing-function: ease;
+    /* Opera */
+    -o-transition-duration: 400ms;
+    -o-transition-timing-function: ease;
+
+    @media (max-width: 1599px) {
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        
+        position: absolute;
+        left: -2em;
+        top: 3em;
+        z-index: 667;
+        margin: 0;
+    }
+}
+
+.site-title-fixed {
+    font-size: 2em;
+    padding-top: .4em;
+    position: fixed;
+    z-index: 667;
+    margin: 0 0 0 1em;
+
+    @media (max-width: 1599px) {
+        top: 4.4em;
+        position: fixed;
+        margin-left: 0.5em;
+    }
+}
+/* navigation */
+nav {
+    display: inline;
+    color: #fff;
+    font-family: 'Passion One', serif;
+    font-size: 2em;
+    background: $dark-grey;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    text-shadow: 0 1px 2px $text-grey;
+    z-index: 102;
+}
+
+/* This class is added on scroll */
+.navfixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    padding-top: .20em;
+}
+
+
+.menu, #respond {
+    margin: 0 25% 0 15%;
+    width: 60%;
+}
+
+/* WTF? */
+#respond {
+    padding: 10px 40px 0;
+}
+
+.menu {
+    li {
+        display: inline;
+        padding: .4em 1em .4em 0;
+
+        a, a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $yellow;
+            text-shadow: 0 -1px 2px $shadow-grey, 0 1px 2px #000000;
+        }
+    }
+}
+
+
+

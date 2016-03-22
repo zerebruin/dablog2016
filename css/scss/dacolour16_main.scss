@@ -1,0 +1,18 @@
+/* 
+    main stylesheet for dacolour16 wordpress theme
+*/
+
+/*
+ *= require_self
+*/
+
+@import 'variables';
+@import 'base/global';
+@import 'base/navigation';
+@import 'base/content';
+@import 'base/sidebar';
+@import 'base/specials';
+@import 'base/addons';
+@import 'base/errorpages';
+@import 'base/gallery';
+

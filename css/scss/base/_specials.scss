@@ -1,0 +1,23 @@
+
+
+/* extra: elevator control */
+
+
+.elevator-control {
+    height: 50px;
+    width: 50px;
+    padding: 2em;
+    position: absolute;
+    right: 0;
+    z-index: 102;
+    background: url('../img/backtotop.png') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.elevator-control-fixed {
+    position: fixed;
+    top: 120px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
